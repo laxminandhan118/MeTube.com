@@ -1,0 +1,280 @@
+
+.Header{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    padding-bottom: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+.left-section{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    background-color: white;
+    align-items: center;
+    padding-left: 18px;
+}
+
+.hamburger-button{
+    height: 40px;
+    width: 40px;
+    padding-top: 6px;
+    border-width: 0px;
+    border-radius: 20px;
+    background-color: white;
+}
+.hamburger-button:hover{
+    background-color: rgb(229, 227, 227);
+    cursor: pointer;
+}
+.hamburger-button:active{
+    background-color: lightgray;
+}
+
+.hamburger{
+    height: 23px;
+}
+.youtube-logo{
+    height:20px;
+    margin-left: 20px;
+}
+.middle-section{
+    display: flex;
+    background-color: white;
+    flex: 1;
+    margin-left: 282px;
+    margin-right: 250px;
+    align-items: center;
+    background-color: white;
+}
+.search-bar{
+    display: flex;
+    flex: 1;
+    height: 39.5px;
+    width: 0px;
+    font-family: Arial;
+    font-size: 15px;
+    padding-left: 12px;
+    border-width: 1px;
+    border-color: rgb(214, 211, 211);
+    border-style: solid;
+    border-radius: 40px 0 0 40px;
+    padding-left: 15px;
+    box-shadow: inset 1px 1px 0.5px rgb(246, 246, 246);
+}
+.search-button{
+    height: 42px;
+    width: 65px;
+    background-color: rgb(242, 239, 239);
+    border-width: 1px;
+    border-color: rgb(214, 211, 211);
+    border-style: solid;
+    border-left: none;
+    border-radius: 0 40px 40px 0;
+    padding-top: 5px;
+    margin-left: 0px;
+    margin-right: 10px;
+    transition: background-color 0.2s;
+    position: relative;
+}
+.search-button:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
+.search-button:active{
+    background-color: rgb(180, 177, 177);
+}
+.search-button, .voice-search-button{
+    position: relative;
+}
+.search-button .pop-out-button{
+    position: absolute;
+    left: -50px;
+    top: -10px;
+    background-color: rgb(107, 106, 106);
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+    border-width: 0px;
+    border-radius: 3px;
+    opacity: 0;
+    transition: opacity 0.2s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.voice-search-button .pop-out-button{
+    position: absolute;
+    left: -160px;
+    top: -10px;
+    background-color: rgb(107, 106, 106);
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+    border-width: 0px;
+    border-radius: 3px;
+    opacity: 0;
+    transition: opacity 0.2s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.search-button:hover .pop-out-button,
+.voice-search-button:hover .pop-out-button{
+    opacity: 1;
+}
+.search-icon{
+    height: 28px;
+}
+.voice-search-button{
+    height: 42px;
+    width: 43px;
+    background-color: rgb(242, 239, 239);
+    border-width: 0px;
+    border-color: lightgray;
+    border-radius: 24px;
+    margin-left: 10px;
+    padding-top: 5px;
+    transition: background-color 0.2s;
+}
+.voice-search-button:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
+.voice-search-button:active{
+    background-color: darkgray;
+}
+.voice-search-icon{
+    height: 25px;
+}
+.right-section{
+    align-items: center;
+    background-color: white;
+    width: 145px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 25px;
+    flex-shrink: 0;
+}
+.create-vedio-button, .notifications-button{
+    position: relative;
+}
+.create-vedio-button .pop-out-button{
+    position: absolute;
+    left: -60px;
+    top: -10px;
+    background-color: rgb(107, 106, 106);
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+    border-width: 0px;
+    border-radius: 3px;
+    opacity: 0;
+    transition: opacity 0.2s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.notifications-button .pop-out-button{
+    position: absolute;
+    left: -100px;
+    top: -10px;
+    background-color: rgb(107, 106, 106);
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+    border-width: 0px;
+    border-radius: 3px;
+    opacity: 0;
+    transition: opacity 0.2s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.create-vedio-button:hover .pop-out-button,
+.notifications-button:hover .pop-out-button{
+    opacity: 1;
+}
+.create-vedio-button{
+    height: 40px;
+    width: 40px;
+    border: none;
+    background-color: white;
+    padding-top: 7px;
+    padding-left: 7px;
+    border-radius: 20px;
+    transition: background-color 0.2s;
+}
+.create-vedio-button:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
+.create-vedio-button:active{
+    background-color: gray;
+}
+.notifications-button{
+    height: 40px;
+    width: 40px;
+    border: none;
+    background-color: white;
+    padding-top: 7px;
+    padding-left: 7px;
+    border-radius: 20px;
+    transition: background-color 0.2s;
+}
+.notifications-button:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
+.notifications-button:active{
+    background-color: darkgray;
+}
+.notifications-icon-container{
+    position: relative;
+}
+.notifications-count{
+    position: absolute;
+    top: 7px;
+    right: 3px;
+    height: 16px;
+    width: 12px;
+    padding-left: 5px;
+    background-color: rgb(226, 14, 14);
+    color: white;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: Arial;
+}
+.notifications-count:hover{
+    cursor: pointer;
+}
+.profile-pic-button{
+    height: 45px;
+    width: 50px;
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    padding-top: 3px;
+    transition: background-color 0.2s;
+}
+.profile-pic-button:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
+.profile-pic-button:active{
+    background-color: darkgray;
+}
+.create-vedio-icon{
+    height: 25px;
+}
+.notifications-icon{
+    height: 27px;
+}
+.profile-pic{
+    height: 40px;
+    border-radius: 30px;
+}
+
+

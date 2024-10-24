@@ -1,0 +1,39 @@
+.second-header{
+    display: flex;
+    background-color: white;
+    height: 33px;
+    position: fixed;
+    left: 95px;
+    top: 60px;
+    right: 0px;
+    padding-bottom: 10px;
+    z-index: 100;
+}
+.first-button{
+    background-color: black;
+    height: 37px;
+    width: 43px;
+    font-size: 15px;
+    color: rgb(242, 239, 239);
+    border-width: 0px;
+    border-radius: 10px;
+}
+.second-button{
+    background-color: rgb(241, 238, 238);
+    height: 37px;
+    font-size: 15px;
+    color: rgb(58, 56, 56);
+    border-width: 0px;
+    border-radius: 10px;
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: background-color 0.2s;
+}
+.second-button:hover{
+    background-color: rgb(206, 205, 205);
+    cursor: pointer;
+}
+.second-button:active{
+    background-color: rgb(186, 183, 183);
+}

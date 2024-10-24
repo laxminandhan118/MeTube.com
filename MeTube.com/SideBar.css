@@ -1,0 +1,47 @@
+.side-bar{
+    background-color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 60px;
+    width: 72px;
+    z-index: 100;
+}
+@media (max-width: 792px){
+    .side-bar{
+        display: none;
+    }
+    body{
+        padding-left: 20px;
+    }
+}
+.button{
+    background-color: white;
+    height: 72px;
+    width: 72px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 10px;
+    padding-top: 10px;
+}
+.button:hover{
+    background-color: rgb(229, 227, 227);
+    cursor: pointer;
+}
+.button:active{
+    background-color: lightgray;
+}
+.icon{
+    background-color: white;
+    height: 27.7px;
+}
+.icon:hover{
+    background-color: rgb(229, 227, 227);
+    cursor: pointer;
+}
+.icon:active{
+    background-color: lightgray;
+}
+.name{
+    font-size: 9.2px;
+}
